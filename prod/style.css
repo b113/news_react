@@ -1,0 +1,144 @@
+body {
+    background: #e1e1e1;
+}
+
+.news {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.news__title {
+    color: #666;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.card-list {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+}
+
+.card__img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__title {
+    font-weight: normal;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.news__button {
+    border: 1px solid #666;
+    background:#666;
+    display: block;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.news__add {
+    display: block;
+    border: 1px solid #d32828;
+    background: #d32828;
+    display: block;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    transition: all 0.5s;
+    margin: 0 auto 2%;
+}
+
+.news__add:hover {
+    background: #fff;
+    border: 1px solid #d32828;
+    color: #d32828;
+    transition: all 0.5s;
+}
+
+.news__button:hover {
+    background: #fff;
+    border: 1px solid grey;
+    color: #666;
+    transition: all 0.5s;
+}
+
+.news__notification {
+    color: #666;
+    font-size: 24px;
+}
+
+.addNews {
+    padding: 3%;
+    border: 1px solid #d32828;
+    border-radius: 10px;
+    margin: 3% 0 4%;
+    background-color:#fff;
+    text-align: left;
+}
+
+.addNews__field {
+    margin-bottom: 4%;
+}
+
+.addNews__label-img {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.addNews__label-title {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.addNews__input-img {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #d32828;
+    padding: 5px 0;
+} 
+
+.addNews__input-title {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #d32828;
+    padding: 5px 0;
+}
+
+.addNews__btn {
+    display: block;
+    border: 1px solid #d32828;
+    background: #d32828;
+    display: block;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    transition: all 0.5s;
+    margin: 0 auto;
+}
+
+.addNews__btn:hover {
+    background: #e1e1e1;
+    border: 1px solid #d32828;
+    color: #d32828;
+    transition: all 0.5s;
+}
