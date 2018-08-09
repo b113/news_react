@@ -1,7 +1,6 @@
 import React from 'react';
 import NewsCard from '../NewsCard';
 
-
 class NewsList extends React.Component {
     constructor() {
         super();
@@ -11,21 +10,21 @@ class NewsList extends React.Component {
             title: '',
             img: '',
             feed: [
-                // {
-                //     id: 1,
-                //     img: 'http://culturemeter.od.ua/wp-content/uploads/2018/07/4-2-370x245.jpg',
-                //     title: 'Кинозвезда Эрик Робертс делился в Одессе секретами голливудской жизни'
-                // },
-                // {
-                //     id: 2,
-                //     img: 'http://culturemeter.od.ua/wp-content/uploads/2018/07/Fotor_153148373805423-370x245.jpg',
-                //     title: 'В Лузановке появилось забавное развлечение для туристов'
-                // },
-                // {
-                //     id: 3,
-                //     img: 'http://culturemeter.od.ua/wp-content/uploads/2018/07/1-20-370x245.jpg',
-                //     title: 'В Одессу едет звездная британская актриса Жаклин Биссет'
-                // }
+                {
+                    id: 1,
+                    img: 'http://culturemeter.od.ua/wp-content/uploads/2018/07/4-2-370x245.jpg',
+                    title: 1
+                },
+                {
+                    id: 2,
+                    img: 'http://culturemeter.od.ua/wp-content/uploads/2018/07/Fotor_153148373805423-370x245.jpg',
+                    title: 'В Лузановке появилось забавное развлечение для туристов'
+                },
+                {
+                    id: 3,
+                    img: 'http://culturemeter.od.ua/wp-content/uploads/2018/07/1-20-370x245.jpg',
+                    title: 'В Одессу едет звездная британская актриса Жаклин Биссет'
+                }
             ]
         };
 

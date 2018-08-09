@@ -1,19 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class NewsCard extends React.Component {
-    render() {
-        const { img, title } = this.props;
-        return (
-            <div className="card">
-                {
-                    img ? (
-                        <img className="card__img" src={img} alt={title} />
-                    ) : null
-                }
-                <h2 className="card__title">{title}</h2>
-            </div>
-        );
-    }
+const NewsCard = props => (
+    <div className="card">
+        {
+            props.img ? (
+                <img className="card__img" src={props.img} alt={props.title} />
+            ) : null
+        }
+        <h2 className="card__title">{props.title}</h2>
+    </div>
+)
+
+NewsCard.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string,
 };
 
 export default NewsCard;
