@@ -9,6 +9,11 @@
     color: #666;
 }
 
+.news__logo {
+    display: block;
+    margin: 0 auto;
+}
+
 .news__list {
     height: 100%;
     display: grid;

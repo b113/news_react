@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsCard from '../NewsCard';
 import styles from './newslist.css';
+import logo from './odessa.jpg';
 
 class NewsList extends React.Component {
     constructor() {
@@ -88,6 +89,7 @@ class NewsList extends React.Component {
         const { amount, feed } = this.state;
         return (
             <div className={styles.news}>
+                <img className={styles.news__logo} src={logo} alt="Новости Одессы"/>
                 <h1 className={styles.news__title}>Новости Одессы:</h1>
                 <div className={styles.news__list}>
                     {

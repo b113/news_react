@@ -42,6 +42,17 @@ module.exports = {
                         }
                     }
                 })
+            },
+            {
+                test: /\.(gif|png|jpg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'img/[hash].[ext]'
+                        }
+                    }
+                ]
             }
         ]
     },
