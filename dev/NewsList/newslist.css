@@ -1,44 +1,22 @@
-body {
-    background: #e1e1e1;
-    font-family: Arial, sans-serif;
-}
-.m66iv {
-    background-color: #fff;
-    border-radius: 10px;
-    margin-bottom: 4%;
-}
 
-._1E4f2 {
-    max-width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-._3oK77 {
-    font-weight: normal;
-    text-align: left;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.mLyXA {
+.news {
     width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
-._3qReZ {
+.news__title {
     color: #666;
 }
 
-._1JBep {
+.news__list {
     height: 100%;
     display: grid;
     grid-template-columns: 49% 49%;
     justify-content: space-between;
 }
 
-._2spyK {
+.news__button {
     border: 1px solid #666;
     background:#666;
     display: block;
@@ -51,7 +29,7 @@ body {
     transition: all 0.5s;
 }
 
-._1uYDq {
+.news__add {
     display: block;
     border: 1px solid #d32828;
     background: #d32828;
@@ -65,26 +43,26 @@ body {
     margin: 0 auto 2%;
 }
 
-._1uYDq:hover {
+.news__add:hover {
     background: #fff;
     border: 1px solid #d32828;
     color: #d32828;
     transition: all 0.5s;
 }
 
-._2spyK:hover {
+.news__button:hover {
     background: #fff;
     border: 1px solid grey;
     color: #666;
     transition: all 0.5s;
 }
 
-._3VyE3 {
+.news__notification {
     color: #666;
     font-size: 24px;
 }
 
-._1TDX2 {
+.addNews {
     padding: 3%;
     border: 1px solid #d32828;
     border-radius: 10px;
@@ -93,35 +71,35 @@ body {
     text-align: left;
 }
 
-._3LRdf {
+.addNews__field {
     margin-bottom: 4%;
 }
 
-.fY2uX {
+.addNews__labelImg {
     margin-bottom: 5px;
     display: block;
 }
 
-._16A1I {
+.addNews__labelTitle {
     margin-bottom: 5px;
     display: block;
 }
 
-._3_Ozr {
+.addNews__inputImg {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #d32828;
     padding: 5px 0;
 } 
 
-.CklDI {
+.addNews__inputTitle {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #d32828;
     padding: 5px 0;
 }
 
-._1sXvv {
+.addNews__btn {
     display: block;
     border: 1px solid #d32828;
     background: #d32828;
@@ -135,7 +113,7 @@ body {
     margin: 0 auto;
 }
 
-._1sXvv:hover {
+.addNews__btn:hover {
     background: #e1e1e1;
     border: 1px solid #d32828;
     color: #d32828;

@@ -1,5 +1,6 @@
 import React from 'react';
 import NewsCard from '../NewsCard';
+import styles from './newslist.css';
 
 class NewsList extends React.Component {
     constructor() {
@@ -86,9 +87,9 @@ class NewsList extends React.Component {
     render() {
         const { amount, feed } = this.state;
         return (
-            <div className="news">
-                <h1 className="news__title">Новости Одессы:</h1>
-                <div className="card-list">
+            <div className={styles.news}>
+                <h1 className={styles.news__title}>Новости Одессы:</h1>
+                <div className={styles.news__list}>
                     {
                         feed.map((item, i) => {
                             if (i < amount) {
@@ -99,33 +100,33 @@ class NewsList extends React.Component {
                 </div>
                 {
                     this.state.addNews ? (
-                        <form className="addNews" onSubmit={this.addNews}>
-                            <div className="addNews__field">
-                                <label className="addNews__label-img">Фото к новости: </label>
+                        <form className={styles.addNews} onSubmit={this.addNews}>
+                            <div className={styles.addNews__field}>
+                                <label className={styles.addNews__labelImg}>Фото к новости: </label>
                                 <input
                                     type="text"
                                     placeholder="Вставьте ссылку на фото"
-                                    className="addNews__input-img"
+                                    className={styles.addNews__inputImg}
                                     onChange={this.imgHandler}
                                     value={this.state.img}
                                 />
                             </div>
-                            <div className="addNews__field">
-                                <label className="addNews__label-title">Заголовок новости: </label>
+                            <div className={styles.addNews__field}>
+                                <label className={styles.addNews__labelTitle}>Заголовок новости: </label>
                                 <input
                                     type="text"
                                     placeholder="Напишите заголовок новости"
-                                    className="addNews__input-title"
+                                    className={styles.addNews__inputTitle}
                                     required
                                     onChange={this.titleHandler}
                                     value={this.state.title}
                                 />
                             </div>
-                            <button className="addNews__btn">Сохранить новость</button>
+                            <button className={styles.addNews__btn}>Сохранить новость</button>
                         </form>
                     ) : (
                             <button
-                                className="news__add"
+                                className={styles.news__add}
                                 onClick={() => this.setState({ addNews: true })}
                             >
                                 Добавить новость
@@ -134,8 +135,8 @@ class NewsList extends React.Component {
                 }
                 {
                     amount < feed.length ? (
-                        <button className="news__button" onClick={() => this.clickHandler(2)}>Показать еще</button>
-                    ) : <p className="news__notification">А новостей на сегодня больше нет.</p>
+                        <button className={styles.news__button} onClick={() => this.clickHandler(2)}>Показать еще</button>
+                    ) : <p className={styles.news__notification}>А новостей на сегодня больше нет.</p>
                 }
             </div>
         );
